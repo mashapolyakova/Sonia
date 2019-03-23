@@ -153,7 +153,7 @@ file_path = os.getcwd()
 path = file_path + '/decoder_tchaik'
 mid = run(number, path)
 mid.save("input.mid")
-path = file_path + '/FluidR3_GM.sf2'
+path = file_path + '/GeneralUser_GS_SoftSynth_v144.sf2'
 fs = FluidSynth(path)
 path = input()
 fs.midi_to_audio('input.mid', path + '/output.wav')
