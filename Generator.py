@@ -116,7 +116,7 @@ def evaluate(input_tensor, decoder, prob, max_length=100):
 
 def generate_sample(number, decoder):
     begin = []
-    note = number % 640
+    note = number % 100
     for i in range(256):
         begin.append(note)
 #     for i in range(256):
@@ -149,6 +149,7 @@ EOS_token = 1
 
 mid = run(number, "/home/maria/Documents/Sonia/decoder_tchaik")
 mid.save("input.mid")
-fs = FluidSynth('/home/maria/TimGM6mb.sf2')
-fs.midi_to_audio('new_song1.mid', 'output.wav')
+fs = FluidSynth('/home/maria/FluidR3_GM.sf2')
+fs.midi_to_audio('input.mid', 'output.wav')
+
 
