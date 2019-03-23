@@ -144,7 +144,7 @@ def run(number, path):
     input_mid = generate_sample(number, decoder)
     return input_mid
 
-
+print("Please, enter your numer")
 number = int(input())
 random.seed(number)
 SOS_token = 0
@@ -155,6 +155,7 @@ mid = run(number, path)
 mid.save("input.mid")
 path = file_path + '/GeneralUser_GS_SoftSynth_v144.sf2'
 fs = FluidSynth(path)
+print("Please, enter a path for your folder")
 path = input()
 fs.midi_to_audio('input.mid', path + '/output.wav')
 
