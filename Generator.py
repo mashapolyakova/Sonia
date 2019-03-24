@@ -144,7 +144,7 @@ def run(number, path):
     input_mid = generate_sample(number, decoder)
     return input_mid
 
-print("Please, enter your numer")
+print("Please, enter your number")
 number = int(input())
 random.seed(number)
 SOS_token = 0
