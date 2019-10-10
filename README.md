@@ -14,7 +14,7 @@ File "Training model" is a process of training on two different datasets. "Decod
 
 
 
-
+# In russian
 Этот проект сделан в рамках програмного проекта в моем университете. Нейронная сеть написана и обучена с помощью библиотеки  pyTorch языка питон. 
 
 Файл Instruction содержит инструкцию по запуску генератора музыки на компьютере пользователя.
